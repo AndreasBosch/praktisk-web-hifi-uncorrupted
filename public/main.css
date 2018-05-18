@@ -25,7 +25,7 @@ p, a{
 header{
     position: fixed;
     z-index: 241421;
-    height: 13vh;
+    
     
    
 }
@@ -426,12 +426,15 @@ header ul, nav ul{
 }
 
 
-
+#wrapper.toggled #footer {
+    display: none
+}
 
 #footer{
     background-color: #3a3737;
     width: 100%;
     padding: 2.5% 2.5%;
+    padding-bottom: 2%;
     height: 205px;
     position: relative;
     clear: both
@@ -592,45 +595,98 @@ border-top-right-radius: 20px
 #hifi2{
     display: none
 }
+@media only screen and (max-width: 1441px){
+    .infobox{
+        width: 35%
+    }
+}
+
+@media only screen and (max-width: 1025px){
+    header{
+        height: 100px;
+    }
+    header img{
+        width: 200px
+    } 
+     .search{
+        margin-top: 10px;
+        
+    } 
+    .fix{
+        padding-top: 10px
+    }
+    .middle{
+        padding-top: 25px;
+        margin-left: 50px
+    }
+    .infobox{
+        width: 45%
+    }
+    #wrapper.toggled #footer {
+        display: none
+    }
+}
 
 @media only screen and (max-width: 769px) {
-   .search{
-       width: 40%;
-   }
-   header img{
-    width: 200px;
+    header{
+        height: 100px;
+    }
+     .search{
+        width: 40%;
+        padding-top: 15px
+    }
+    header img{
+     width: 200px;
+    
+    }
+    #fejlbesked{
+        transform: translateX(-450px);
+    }
    
-   }
-   #hifi{
-       margin-top: 15px;
-       
-   }
+    
+ 
+    #wrapper.toggled #sidebar-wrapper {
+     width: 440px;
+ }
+ #wrapper.toggled {
+     padding-left: 440px
+ }
+ .sidebar-nav{
+     width: 440px
+ }
+ nav img{
+     width: 70%;
+     
+ }
+ #logos{
+     padding-bottom: 40px
+ }
+ .nav>li>a{
+     font-size: 2em;
+     
+ }
+ .nav>li{
+     margin-bottom: 1em
+ }
+ .infobox{
+     width: 60%;
+     height: 144px;
+ }
+ .header1{
+     font-size: 3em
+ }
+ .middle{
+     width: 100%;
+     padding-bottom: 15px
+ }
+ 
+ #wrapper.toggled #footer {
+     display: none
+ }
+}
+ 
 
-   #wrapper.toggled #sidebar-wrapper {
-    width: 440px;
-}
-#wrapper.toggled {
-    padding-left: 440px
-}
-.sidebar-nav{
-    width: 440px
-}
-nav img{
-    width: 70%;
-    
-}
-#logos{
-    padding-bottom: 40px
-}
-.nav>li>a{
-    font-size: 2em;
-    
-}
-.nav>li{
-    margin-bottom: 1em
-}
-   
-}
+
 @media only screen and (max-width: 426px){
 
     .search{
@@ -644,16 +700,130 @@ nav img{
     }
     #hifi2{
         display: block;
-        padding: 30px 0 20px 35% ;
+        padding: 20px 0 20px 55% ;
       
     }
     header{
-        height: 16vh
+        height: 160px;
+        padding-bottom: 5vh
+        
     }
     .right img{
         padding: 25px 10%
     }
     .right{
         width: 50%
+    }
+   
+    .gallery{
+        height: 90vh;
+        background-size: cover;
+    }
+    .gallery img{
+        height: 90vh;
+        
+        
+        width: 200%
+    }
+    .header1{
+        font-size: 3.2em;
+        padding-top: 2%;
+        width: 90%
+    }
+    .infobox{
+        width: 90%;
+        height: 129px;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 370px;
+    }
+    #wrapper.toggled {
+        padding-left: 370px;
+    }
+    .sidebar-nav{
+        width: 370px
+    }
+    .infobox{
+        font-size: 1.6em;
+    }
+    .header1{
+        font-size: 2.5em
+    }
+   #hifi2{
+       padding-left: 20%
+   }
+   li.search{
+       padding: 0
+   }
+   header{
+       padding: 0
+   }
+   .left{
+       width: 50%
+   }
+   .left img:nth-child(2){
+       padding-left: 15px;
+       padding-top: 0;
+       padding-bottom: 10px
+   }
+   .middle{
+       width: 50%;
+       float: left;
+       margin: 0;
+       padding-top: 0;
+       padding-bottom: 10px
+   }
+    
+}
+
+
+@media only screen and (max-width: 376px){
+    .right img:nth-child(1){
+        padding-left: 15%
+    }
+    .middle p{
+        font-size: 0.9em
+    }
+    header{
+        height: 160px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 320px;
+    }
+    #wrapper.toggled {
+        padding-left: 320px
+    }
+    .sidebar-nav{
+        width: 320px
+    }
+    
+}
+
+
+@media only screen and (max-width: 321px){
+    .right img{
+        padding: 30px 0 10px 0
+    }
+    .left img{
+        padding-left: 10px
+    }
+    .left img:nth-child(2){
+        padding-left: 5px;
+        width: 120%
+        
+    }
+    .middle{
+        padding: 10px 20px
+    }
+    
+    #wrapper.toggled #sidebar-wrapper {
+        width: 270px;
+    }
+    #wrapper.toggled {
+        padding-left: 270px
+    }
+    .sidebar-nav{
+        width: 270px
     }
 }

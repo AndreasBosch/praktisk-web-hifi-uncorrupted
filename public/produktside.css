@@ -17,7 +17,7 @@
 }
 
 h2{
-    font-size: 4em  !important
+    font-size: 4em 
 }
 
 .itemSupplier{
@@ -34,4 +34,16 @@ footer{
 .price{
     font-weight: bold;
     color:  #35acdf;    
+}
+
+@media only screen and (max-width: 426px) {
+    #page-content-wrapper{
+        padding-top: 160px
+    }
+    div h2{
+        font-size: 2em
+    }
+    #productContainer{
+        width: 70%
+    }
 }

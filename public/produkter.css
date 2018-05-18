@@ -130,9 +130,7 @@ color: white
         float: left;
        
     }
-   .middle{
-       width: 100%
-   }
+  
 
    #sort{
     width: 25%;
@@ -151,9 +149,10 @@ color: white
 }
 
 @media only screen and (max-width: 1025px) {
-.middle{
-    margin-left: 10%
-}
+    #sort, #items{
+        padding-top: 50px
+    }
+   
 }
 
 @media only screen and (max-width: 426px) {
@@ -170,21 +169,10 @@ color: white
         max-width: 96%;
         min-width: 96%;
     }
-    .left img{
-        width: 50%;
-        padding: 1% 3%;
-        float: left;
-    }
-    .left{
-        width: 100%
-    }
-    .middle{
-        float: none;
-        margin: 0;
-        padding: 1% 3%
-    }
-    .middle p{
-        margin-top: 20%
-    }
+   
    
 }
+@media only screen and (max-width: 376px) {
+    #page-content-wrapper{
+        padding-top: 160px
+    }}

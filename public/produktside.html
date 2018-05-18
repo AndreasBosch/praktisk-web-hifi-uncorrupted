@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Produkter</title>
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet">
+    <link rel="stylesheet" href="produktside.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="overlay"></div>
+        <nav class="clearfix">
+
+            <ul>
+                <li class="fix">
+
+                    <button type="button" class="hamburger is-closed " data-toggle="offcanvas">
+                        <span class="hamb-top"></span>
+                        <span class="hamb-middle"></span>
+                        <span class="hamb-bottom"></span>
+                    </button>
+
+
+                </li>
+                <li class="search">
+                    <form id="searchForm" action="produkter.html">
+
+                        <input type="text" name="search">
+
+                        <button id="searchButton">
+                            <span class="glyphicon glyphicon-search"></span>
+
+                        </button>
+                    </form>
+                </li>
+
+                <li id="hifi">
+                    <a href="index.html">
+                        <img src="assets/logo.png">
+                    </a>
+                </li>
+
+
+
+            </ul>
+
+        </nav>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+
+                        <img id="logos" src="assets/logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="produkter.html">Produkter</a>
+                </li>
+
+                <li id="kontaktFormList" class="vis">
+                    <a>Kontakt os</a>
+                </li>
+
+                <li id="contact">
+                    <form id="formSend">
+                        <input type="email" name="email" placeholder="Email.." id="email">
+                        <input type="text" name="emne" placeholder="Besked emne" id="emne">
+                        <textarea name="indhold" placeholder="Besked indhold"></textarea>
+                    </form>
+                    <button id="messageButton">Send besked</button>
+                    <span id="fejlbesked" class="gemmeren"></span>
+
+
+                </li>
+
+            </ul>
+        </nav>
+
+
+
+        <div id="page-content-wrapper">
+
+            <div id="ProductContainer">
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <footer class="clearfix" id="footer">
+            <div class="left">
+
+                <img src="assets/trustpilot-5-stars-138px.png">
+                <img src="assets/e-maerket.png">
+            </div>
+
+            <div class="right">
+                <a class="facebook" href="https://www.facebook.com/hifiklubbendk/?hc_ref=ARRDDlVVv6lx0ZbITyKxdfPY_tzBax5hSNfEc5B0yhF_kUteLLMhsivMBaL7gdT17ts&fref=nf"
+                    target="_blank">
+                    <img src="assets/facebook.png">
+                </a>
+                <a class="instagram" href="https://www.instagram.com/hifiklubbendanmark/" target="_blank">
+
+                    <img src="assets/instagram.png">
+                </a>
+            </div>
+            <div class="middle">
+                <p>Kundeservice tlf. 70 80 90 00 Mandag-fredag kl. 9-18, lørdag kl. 10-15 Kontakt os</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="scripts.js"></script>
+    <script src="produktside.js"></script>
+    <script src="helpers.js"></script>
+</body>
+
+</html>

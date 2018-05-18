@@ -1,0 +1,37 @@
+#productContainer{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding-bottom: 50px
+ 
+}
+
+#productContainer div img{
+  position: relative;
+  width: 100%;
+}
+#productContainer a{
+    display: block;
+    color: grey;
+   
+}
+
+h2{
+    font-size: 4em  !important
+}
+
+.itemSupplier{
+    color: grey;
+    font-size: 2em
+}
+p{
+    margin: 20px 0;
+    font-size: 1.5em
+}
+footer{
+    margin-top: 90px
+}
+.price{
+    font-weight: bold;
+    color:  #35acdf;    
+}
